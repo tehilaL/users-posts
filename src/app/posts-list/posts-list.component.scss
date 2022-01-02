@@ -1,0 +1,38 @@
+* {
+    font-size: calc(12px + 0.5vw);
+    text-align: center;
+  }
+  
+  .container {
+    padding: 20px;
+  }
+  
+  tr {
+    border-bottom: 1px solid rgb(202, 230, 241);
+  }
+  
+  tbody tr:hover {
+    background-color: rgb(202, 230, 241);
+  }
+  
+  thead tr {
+    background-color: rgb(226, 233, 235);
+  }
+  
+  tbody tr:focus, .selected {
+    background-color: rgb(202, 230, 241);
+  }
+  
+  .notSelected {
+    background-color: transparent;
+  }
+  
+  .cutString {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    line-clamp: 1;
+    -webkit-box-orient: vertical;
+    text-align: left;
+  }

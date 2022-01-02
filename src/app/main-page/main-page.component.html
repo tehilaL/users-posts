@@ -1,0 +1,10 @@
+<div class="container" >
+    <div class="row">
+        <div class="col-12 top" >Users & Posts</div>
+    </div>
+    <div class="row">
+        <app-users-list class="col-lg-2 col-md-2 col-sm-12" (changeUser)="changeUser($event)"></app-users-list>
+        <app-posts-list class="col-lg-7 col-md-7 col-sm-12 post" (changePost)="changePost($event)" [posts]="posts" [postId]="posts[0].id"></app-posts-list>
+        <app-comments-list class="col-lg-3 col-md-3 col-sm-12" [comments]="comments"></app-comments-list>
+    </div>
+</div>

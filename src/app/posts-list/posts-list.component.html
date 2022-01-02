@@ -1,0 +1,24 @@
+<table class="container">
+    <thead >
+        <tr class="row">
+            <th class="col-2">Post id</th>
+            <th class="col-5">Title</th>
+            <th class="col-5">Body</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr [ngClass]="p.id == postId ? 'selected': 'notSelected'" *ngFor="let p of posts" class="row" (click)="changePostFunction(p.id)">
+            <td class="col-2">
+                {{p.id}}
+            </td>
+            <td class="col-5 cutString">
+                {{p.title| uppercase}}
+            </td>
+            <td class="col-5 cutString">
+                {{p.body}}
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+

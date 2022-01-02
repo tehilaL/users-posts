@@ -1,0 +1,36 @@
+.container {
+    padding: 0px;
+    margin: 0px;
+}
+
+.col-md-12, .col-lg-6, .col-sm-12 {
+    padding: 8px;
+
+}
+
+.oneComment {
+    text-align: left;
+    box-shadow: 0px 0px 6px 0px grey;
+    height: 32vh;
+    padding: 10px;
+    font-size: calc(12px + 0.5vw);
+
+}
+
+.comment {
+    font-size: calc(13px + 1vw);
+}
+
+label {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.body {
+    position: relative;
+    display: inline-block;
+    word-wrap: break-word;
+    overflow: hidden;
+    max-height: 3.6em;
+    line-height: 1.2em;
+}

@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="row">
+        <div *ngFor="let c of comments" class="col-sm-6 col-md-12 col-lg-6">
+            <div class="oneComment">
+                <div class="comment">
+                    Comment
+                </div>
+                <div class="body">
+                   <label>Body:</label> {{c.body}}
+                </div>
+                <div class="a">
+                    <label>Author:</label> <a href='mailto:{{c.email}}' target="_top">{{c.email|cutString}}</a>
+                </div>
+            </div>          
+        </div>
+    </div>
+</div>

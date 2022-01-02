@@ -1,0 +1,14 @@
+<ul *ngIf="getScreenWidth>800">
+    <li><span>Workers</span></li>
+    <li [ngClass]="u.id == userId ? 'selected': 'notSelected'" *ngFor="let u of users"
+        (click)="changeUserFunction(u.id)">{{u.id}}&nbsp;&nbsp;{{u.name}}</li>
+</ul>
+<div *ngIf="getScreenWidth<=800" class="select">
+    <span>Workers</span>
+    <select [(ngModel)]="userId" name="valueCheck" (change)="changeUserMobile($event)">
+        <option value="undefined" disabled> </option>
+        <option *ngFor="let u of users" value="{{u.id}}">
+            {{u.id}}&nbsp;&nbsp;{{u.name}}
+        </option>
+    </select>
+</div>
